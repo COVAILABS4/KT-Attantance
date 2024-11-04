@@ -38,7 +38,7 @@ class _AttendanceHistoryPageState extends State<AttendanceHistoryPage> {
 
   // final server_ip = SERVER_IP;
 
-  String api = "http://${SERVER_IP}:3000"; // Replace with your API URL
+  String api = "${SERVER_IP}"; // Replace with your API URL
 
   @override
   void initState() {

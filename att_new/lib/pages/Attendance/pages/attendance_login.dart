@@ -115,7 +115,7 @@ class AttendanceForm extends StatelessWidget {
   Widget build(BuildContext context) {
     var server_ip = SERVER_IP;
 
-    String api = "http://${server_ip}:3000"; // Replace with your actual API URL
+    String api = "${SERVER_IP}"; // Replace with your actual API URL
 
     Future<void> submitAttendance() async {
       final String date = getCurrentDate();
@@ -296,8 +296,7 @@ class AttendanceForm extends StatelessWidget {
     final Map<String, dynamic> locationData =
         await getCurrentLocation(context); // Fetch location data
 
-    final String api =
-        "http://${SERVER_IP}:3000"; // Replace with your actual server IP
+    final String api = "${SERVER_IP}"; // Replace with your actual server IP
     final String url = '$api/add-attendance'; // Replace with your API endpoint
 
     try {
@@ -384,7 +383,7 @@ class AttendanceData extends StatefulWidget {
 class _AttendanceDataState extends State<AttendanceData> {
   // var server_ip = SERVER_IP;
 
-  String api = "http://${SERVER_IP}:3000"; // Replace with your actual API URL
+  String api = "${SERVER_IP}"; // Replace with your actual API URL
   Duration workingDuration = Duration();
   Timer? _timer;
 

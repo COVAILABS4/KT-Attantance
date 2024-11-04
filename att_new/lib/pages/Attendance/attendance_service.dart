@@ -17,7 +17,7 @@ class _AttendancePageState extends State<AttendancePage> {
   int status = 0; // Update this based on your logic
   // var server_ip = SERVER_IP;
 
-  String api = "http://${SERVER_IP}:3000"; // Replace with your actual API URL
+  String api = "${SERVER_IP}"; // Replace with your actual API URL
 
   String? selectedDuration;
   final List<String> durations = [
@@ -189,7 +189,7 @@ class AttendanceData extends StatelessWidget {
 
   var server_ip = SERVER_IP;
 
-  String api = "http://${SERVER_IP}:3000"; // Replace with your actual API URL
+  String api = "${SERVER_IP}"; // Replace with your actual API URL
 
   AttendanceData({
     required this.id,

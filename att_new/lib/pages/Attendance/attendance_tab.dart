@@ -20,7 +20,7 @@ class _AttendanceTabState extends State<AttendanceTab> {
   int _selectedIndex = 0;
   // var server_ip = SERVER_IP;
 
-  String api = "http://${SERVER_IP}:3000"; // Replace with your actual API URL
+  String api = "${SERVER_IP}"; // Replace with your actual API URL
   Map<String, dynamic> apiData = {}; // Store data from the API request
   bool isLoading = true; // Loading indicator
   String date = getCurrentDate();

@@ -28,7 +28,7 @@ class _LoginAttendancePageState extends State<LoginAttendancePage> {
 
   // var server_ip = SERVER_IP;
 
-  String api = "http://${SERVER_IP}:3000"; // Replace with your actual server IP
+  String api = "${SERVER_IP}"; // Replace with your actual server IP
 
   @override
   void initState() {

@@ -15,7 +15,7 @@ class AlreadyLoggedInWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     // var server_ip = SERVER_IP;
 
-    String api = "http://${SERVER_IP}:3000";
+    String api = "${SERVER_IP}";
 
     String date = getCurrentDate();
 

@@ -23,9 +23,9 @@ class _LoginAppState extends State<LoginApp> {
   bool _isLoading = false;
   bool _isOffline = false; // Track offline status
 
-  var server_ip = SERVER_IP;
+  // var server_ip = SERVER_IP;
 
-  String api = "http://${SERVER_IP}:3000";
+  // String api = "http://${SERVER_IP}:3000";
 
   @override
   void dispose() {
@@ -83,7 +83,7 @@ class _LoginAppState extends State<LoginApp> {
     String password = _passwordController.text;
 
     final response = await http.post(
-      Uri.parse('$api/auth'),
+      Uri.parse('$SERVER_IP/auth'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8'
       },
